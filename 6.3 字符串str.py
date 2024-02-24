@@ -11,7 +11,7 @@ print(f"{my_string}中zheng的下标是{my_string.index("zheng")}")
 my_new_string1 = my_string.replace("zheng fan", "zai feng")
 print(my_new_string1)
 
-# strip(str = " ") 删除字符串首尾的str(默认为空格)
+# strip(str=" ") 删除字符串首尾的str(默认为空格和换行符)
 my_new_string2 = my_string.strip("l")
 print(my_new_string2)
 
