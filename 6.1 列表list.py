@@ -53,6 +53,18 @@ print(name_list.count("lin"))
 # 5. 列表的长度, len(list)
 print(len(name_list))
 
+# 6. sort(key=选择排序依据的函数 ,reverse=True/False)方法
+# 参数key，是要求传入一个函数，表示将列表的每一个元素都传入函数中，返回排序的依据
+# 参数reverse，是否反转排序结果，True表示降序，False表示升序
+test_list = [['a', 1], ['b', 2], ['c', 4]]
+def my_sort_order(element):
+    return element[1]
+test_list.sort(key=my_sort_order, reverse=True)
+print(test_list)
+# 传入lambda匿名函数
+test_list.sort(key=lambda ele: ele[1], reverse=False)
+print(test_list)
+
 # 列表的遍历
 # 利用while，可操作性高
 i = 0
